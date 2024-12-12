@@ -1,0 +1,490 @@
+body {
+    background-color: #bbdeee;
+    color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  menu{
+    background-color: rgb(73, 65, 94);
+    padding: 15px; /**adiciona espaço ao redor do conteudo do menu**/
+    text-align: center;/**alinhamento de texto**/
+    display: flex;/**usa um layout para alinhar **/
+    justify-content:center;/**alinha os elementos horizontalmente**/
+    height: 80px;
+    width: 100%;
+    position: relative; /*fixa o item na tela*/
+    z-index: 2; /*faz o item ficar por cima dos outros*/
+   margin-top: 0;
+
+
+  }
+    .menu-itens{
+        color: aliceblue; /**defina a cor do texto**/
+        text-decoration: none; /**retira o traço de link da palavra**/ 
+          font-size: 18px;/**define o tamanho do texto**/
+          display: inline-block ;/**deixa o item como o bloco em uma linha**/
+          padding: 10px 50px;
+    
+    
+    }
+    /*houver é um evento de mouse que ocorre uma ação toda vez que colocamos o mouse em cima do elemento. Abaixo aplicamos um evento de mouse no nosso menu*/
+    .menu-itens:hover{
+        /*quando colocamos o mouse sob elemento iremos:*/
+        background-color: #bbdeee21; /*troca a cor de fundo*/
+        color: rgb(253, 251, 255); /*a cor do texto*/
+        width: auto; /*ajustaremos largura do elemento*/
+        padding: 15px 25px; /*a distancia do conteudo*/
+        text-decoration: none;
+        border-radius: 8px; /*arredondar as bordas de um elementos*/
+    }
+    
+    
+
+
+strong {
+    color: rgb(0, 0, 0);
+}
+p {
+    width: 60%;
+    font-size: large;
+}
+li {
+    text-align: start;
+    padding: 10px;
+    width: 70%;
+}
+ul {
+    width: 40%;
+}
+li::marker{
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(17, 0, 255, 0.815);
+    margin-right: 100px;
+    font-size: large;
+}
+h2, h3 {
+    padding: 3px;
+    margin: 3px;
+}
+th{
+    padding-right: 10px;
+}
+table{
+    border: black 3px solid;
+}
+.carroselCard{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer{
+    background-color: rgba(0, 0, 255, 0.89);
+height: 50px;
+color: antiquewhite;
+justify-items: center;
+padding-top: 1%;
+margin-bottom: 0%;
+width: 100%;
+
+}
+
+#telaInicial{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 6px ;
+}
+
+ #showverme{
+    width: 1500px;
+    height: 800px;
+ }
+
+ img{
+    width: 500px;
+    height: 400px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body {
+  
+  
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  
+  
+  
+  
+  
+  menu{
+    background-color: rgb(172, 16, 16);
+    padding: 15px; /**adiciona espaço ao redor do conteudo do menu**/
+    text-align: center;/**alinhamento de texto**/
+    display: flex;/**usa um layout para alinhar **/
+    justify-content:center;/**alinha os elementos horizontalmente**/
+    height: 80px;
+    width: 100%;
+    position: fixed; /*fixa o item na tela*/
+    z-index: 2; /*faz o item ficar por cima dos outros*/
+   margin-top: 0;
+  border-radius: 5px;
+  
+  }
+  .menu-itens{
+    color: aliceblue; /**defina a cor do texto**/
+    text-decoration: none; /**retira o traço de link da palavra**/ 
+      font-size: 18px;/**define o tamanho do texto**/
+      display: inline-block ;/**deixa o item como o bloco em uma linha**/
+      padding: 10px 20px;
+  
+  
+  }
+  /*houver é um evento de mouse que ocorre uma ação toda vez que colocamos o mouse em cima do elemento. Abaixo aplicamos um evento de mouse no nosso menu*/
+  .menu:hover{
+    /*quando colocamos o mouse sob elemento iremos:*/
+  background-color: #bbdeee; /*troca a cor de fundo*/
+    color: rgb(179, 19, 19); /*a cor do texto*/
+    width: 220px; /*ajustaremos largura do elemento*/
+    padding: 15px 25px; /*a distancia do conteudo*/
+    border-radius: 8px; /*arredondar as bordas de um elementos*/
+  }
+  
+  
+  
+  .caixa2 {
+    padding: 15px;
+    background-color: rgba(78, 131, 71, 0.959);
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 30%;
+  
+  }
+  
+  .carousel-inner{
+    position: relative;
+  }
+  
+  .carousel-control-prev, .carousel-control-next{
+    position: absolute;/*posiciona um elemento em relação ao elemento pai mais prox.*/
+    top: 50%; /*posiciona a 50% da altura do elemento filho*/
+    transform: translateY(-50%); /*divide a div pela metade*/
+    width: 5%;/*ajuste da largura da seta*/
+    z-index: 1;/*garante que fiquem sobre a imagem*/
+    background-color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  
+  
+  h1, h3, p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13;
+  }
+  #img22 {
+    width: 1400px;
+    height: 400px;
+    border-radius: 40px;
+  }
+  
+  #caixaa{
+    height: 600px;
+  }
+  #bale{
+    height: 600px;
+    width: 700px;
+  }
+  footer{
+    background-color: rgba(0, 0, 255, 0.89);
+  height: 50px;
+  color: antiquewhite;
+  justify-items: center;
+  padding-top: 1%;
+  margin-bottom: 0%;
+  width: 100%;
+  
+  }
+  .menu-itens:hover{
+    /*quando colocamos o mouse sob elemento iremos:*/
+    background-color: #ec0707; /*troca a cor de fundo*/
+    color: rgb(148, 17, 17); /*a cor do texto*/
+    width: 220px; /*ajustaremos largura do elemento*/
+    padding: 15px 25px; /*a distancia do conteudo*/
+    border-radius: 8px; /*arredondar as bordas de um elementos*/
+  }
+  source{
+    background-color: rgb(28, 144, 245);
+    color: #0cb2ff;
+  
+  }
+  
+  #letra{
+  
+    color: #ffffff;
+  }
+  
+  
+  a {
+    color: #fcee71; /* Muda a cor do link para um tom laranja */
+    text-decoration: none; /* Remove o sublinhado do link */
+  }
+  
+  a:hover {
+    color: #e6ffeb; /* Muda a cor do link quando o mouse passa por cima */
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.carroselCard{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(181, 189, 135);
+  color: rgb(0, 0, 0);
+ border-radius: 50%;
+}
+#estrela{
+  
+  width: 120px ;
+}
+
+
+/* Resetando margens e definindo o estilo básico da página */
+body {
+  margin: 0;
+  height: 200vh; /* Dando um pouco de altura extra para ter a rolagem */
+  background-color: #8f8968;
+  position: relative;
+}
+
+/* Círculo 1 (lado esquerdo) */
+.circle-left {
+  position: fixed;
+  top: -25%;
+  left: -30%;
+  width: 700px;
+  height: 500px;
+  background-color: rgba(112, 3, 3, 0.555); /* Cor vermelha */
+  border-radius: 50%;
+  z-index: -1; /* Coloca atrás do conteúdo */
+}
+
+/* Círculo 2 (lado direito) */
+
+
+
+.box {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+.menu-itens:hover{
+  /*quando colocamos o mouse sob elemento iremos:*/
+background-color: #f02b2bf5; /*troca a cor de fundo*/
+  color: rgba(243, 237, 248, 0.911); /*a cor do texto*/
+  width: 220px; /*ajustaremos largura do elemento*/
+  padding: 15px 25px; /*a distancia do conteudo*/
+  border-radius: 8px; /*arredondar as bordas de um elementos*/
+}
+h1, h3, p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 13;
+   }
+   .menu-itens{
+      color: aliceblue; /**defina a cor do texto**/
+      text-decoration: none; /**retira o traço de link da palavra**/ 
+        font-size: 18px;/**define o tamanho do texto**/
+        display: inline-block ;/**deixa o item como o bloco em uma linha**/
+        padding: 10px 20px;  }
+
+        #menur{
+          background-color: rgb(153, 160, 112);
+          padding: 10px; /**adiciona espaço ao redor do conteudo do menu**/
+          text-align: center;/**alinhamento de texto**/
+          display: flex;/**usa um layout para alinhar **/
+          justify-content: center;/**alinha os elementos horizontalmente**/
+          height: 80px;
+          width: 100%;
+          position: fixed; /*fixa o item na tela*/
+          z-index: 2; /*faz o item ficar por cima dos outros*/
+          margin-top: 0%; /*posiciona o item a uma distancia de 0px da extremidade superior*/
+           margin-left: -0px;
+          color: black;
+      }
+      /* Reset de estilo básico do navegador */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Corpo do site */
+body {
+background-color: #e4dac3;
+color: #4e4e4e;
+line-height: 1.6;
+}
+
+/* Menu de navegação fixo no topo */
+.navbar {
+position: relative;  /* Fixa o menu no topo */
+top: 0;
+left: 0;
+width: 100%;
+background-color: #4a583a;  /* Cor dourada para o menu */
+z-index: 1000;  /* Garantir que o menu fique acima do conteúdo */
+
+}
+
+.navbar ul {
+list-style: none;
+display: flex;  /* Organiza os itens horizontalmente */
+justify-content: center;  /* Centraliza os itens */
+}
+
+.navbar ul li {
+margin: 0 20px;
+}
+
+.navbar ul li a {
+text-decoration: none;
+color: #fff;
+font-size: 1.2em;
+font-weight: bold;
+text-transform: uppercase;
+padding: 10px 15px;
+display: inline-block;
+transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+background-color: #5e755e;  /* Cor de hover para o link */
+}
+
+.navbar #vermeita :hover {
+background-color: #d80000;  /* Cor de hover para o link */
+}
+
+.navbar #verdeita :hover {
+background-color: #06c000;  /* Cor de hover para o link */
+}
+
+.navbar #brancoita :hover {
+background-color: #dddddd;  /* Cor de hover para o link */
+}
+
+/* Garantir que o conteúdo não fique sobre o menu fixo */
+main {
+padding-top: 80px;  /* Adiciona espaço suficiente para não cobrir o conteúdo */
+}
+
+/* Estilos para as seções do conteúdo */
+section {
+padding: 50px 20px;
+margin: 20px 0;
+}
+
+h1, h2 {
+color: #333;
+}
+
+/* Rodapé */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px;
+font-size: 1.2em;
+}
+
+
+
+.fixed {
+position: fixed;
+top: 0px;
+left: 0;
+right: 0;
+box-shadow: 0 4px 6px ;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,293 @@
+<!--Declara ao navegador que odocumentoédo tipo html-->
+<!DOCTYPE html>
+
+<!--Este elemento define o início do documento HTML e especifica o idioma principal da página como português Brasil-->
+<html lang="pt-br"><!-- TAG de abertura html -->
+
+<!--Esta seção contém metadados e informações sobre o documento HTML, que não são diretamente visíveis na página web.-->
+
+<head><!-- TAG de abertura head -->
+
+    <!--Define o conjunto de caracteres utilizado no documento como UTF-8, que dá suporte para representar corretamente caracteres especiais e internacionais.-->
+    <meta charset="UTF-8">
+
+    <!--Configura a escala inicial e o comportamento de largura para dispositivos móveis, permitindo que a página se adapte de maneira responsiva a diferentes tamanhos de tela.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Define o título da página, que é exibido na barra de título do navegador. Neste caso, o título padrão é "Document", mas deve ser substituído por um título mais descritivo que represente o conteúdo da página.-->
+    <title>ESTRUTURA HTML</title>
+
+    <link rel="stylesheet" href="style.css"> <!--TAG para conectar o HTML e o CSS-->
+    <!--conectando o javascript-->
+    <script defer type="text/javascript" src="main.js"></script>
+</head><!-- TAG de fechamento head -->
+
+<!-- Início da seção principal do documento (corpo da página) -->
+
+<body> <!-- TAG de abertura body -->
+    <nav>
+        <ul>
+            <li class="menu"><a href="#titulo">titulos</a></li>
+            <li class="menu"><a href="#links">links</a></li>
+            <li class="menu"><a href="#listas">listas</a></li>
+            <li class="menu"><a href="#tabelas">tabelas</a></li>
+            <li class="menu"><a href="#imagens">imagens</a></li>
+            <li class="menu"><a href="#videos">videos</a></li>
+            <li class="menu"><a href="#audios">audios</a></li>
+            <li class="menu"><a href="#css">css</a></li>
+            <li class="menu"><a href="#javascript">JS</a></li>
+        </ul>
+    </nav>
+
+    <SECtion id="titulo">
+        <H1>TAGS DE TÍTULO</H1>
+        <P>As tags do tipo "h" são tags de título, e o numero que a acomapnha indica sua hierarquia de título.</P>
+        <h1>está é a configuração de texto para a tag h1</h1>
+        <p>h2:</p>
+        <h2>está é a configuração de texto para a tag</h2>
+        <p>h3:</p>
+        <h3>está é a configuração de texto para a tag h3</h3>
+        <p>h4:</p>
+        <h4>está é a configuração de texto para a tag h4</h4>
+        <p>h5:</p>
+        <h5>está é a configuração de texto para a tag h5</h5>
+        <p>h6:</p>
+        <h6>está é a configuração de texto para a tag h6</h6>
+        <p>também temos a tag p, que é utilizada para quando precisamos escrever parágrafos.</p>
+    </SECtion>
+    <section id="links">
+        <h1>inserindo links</h1>
+        <p>vamos criar um link para que o nosso usuário conheça o SENAI. o comando para criar um link é a tag a.
+            se definirmos a target como: <br>
+            _blank:abre a página em uma nova janela/aba <br>
+            _self:abre a página na mesma janela <br>
+            _parent:abre a página na mesma janela do link <br> </p>
+        <a href="https://sp.senai.br/cursos?unidade=569" target="_blank">conheça o SENAI</a>
+    </section>
+
+    <section id="listas">
+        <h1>listas</h1>
+        <p>para criar a lista, usamos a tag ul, para criar os itens da lista usamos a tag li. fui me matricular no SENAI
+            e precisei levar:</p>
+        <ul>
+            <li>RG</li>
+            <li>comprovante de endereço</li>
+            <li>cpf</li>
+            <li>comprovante de escolaridade</li>
+
+        </ul>
+        <p>para criar uma lista numerada, eu utilizo a TAG ol e para criar os elementos utilizo a TAG li:
+            estão matriculados comigo na turma meus amigos:
+        </p>
+
+        <ol>
+            <li>pedro</li>
+            <li>raul</li>
+            <li>mateus</li>
+        </ol>
+    </section>
+
+    <SEction id="tabelas">
+        <H1>tabelas: </H1>
+        <p>a tabela é uma estrutura composta de linhas e colunas, com inumeras possibilidades de formatação. para
+            construir uma tabela a TAG table,
+            e para construir uma linha usamos a tagtr, e para criar uma coluna usamos a tag td.
+        </p>
+        <table>
+            <tr id="cabecalho"><!--primeira linha-->
+                <td>curso</td> <!--primeira coluna-->
+                <td>turno</td> <!--segunda coluna-->
+            </tr>
+
+            <tr><!--segunda linha-->
+                <td>desenvolvimento em JS</td><!--primeira coluna-->
+                <td>manhã</td> <!--segunda coluna-->
+
+            </tr>
+
+            <tr> <!--terceira linha-->
+                <td>microsoft AI-900</td> <!--primeira coluna-->
+                <td>tarde</td> <!--segunda coluna-->
+            </tr>
+            <tr> <!--quarta linha-->
+                <td>programação oracle JAVA</td> <!--primeira coluna-->
+                <td>tarde</td> <!--segunda coluna-->
+            </tr>
+
+
+
+        </table>
+        <section id="imagens">
+            <h1>imagem</h1>
+            <p>é comum querermos ou precisarmos inserir imagens na nossa página web.
+                isto deixa seu site mais atraente e se você esta desenvolvendo uma loja virtual isso é essencial.
+                para isso usamos a TAG img</p>
+
+            <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_1_230824_71d370d1-e6d4-4d79-8cb0-5e30a1d7cb75_o.jpeg&tipo=g"
+                alt="imagem SENAI Paulinia">
+            <br>
+            <br>
+            <img src="italia.jpg" alt="uma imagem da italia">
+
+        </section>
+
+        <section id="videos">
+            <h1>vídeos</h1>
+            <p>hoje os víeos são um ótimo recurso visual, quase todos os sites necessitam
+                desse recurso, seja uma vídeo aula, seja para demonstração de um serviço.
+                Podemos inserir um vídeo na nossa web página por meio da TAG:</p>
+            <h1>Conheça o SENAI</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pRHzSpmhlrM?si=Q3kbu7STpKRcCvDk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+            <video src="senai.mp4" controls></video>
+
+        </section>
+
+        <section id="audios">
+
+            <h1>aúdios</h1>
+            <br>
+            <br>
+            <p>para incorporar os arquivos de aúdio em nossa página
+                web utilizamos a TAG aúdio:
+            </p>
+            <audio src="smoke.mp3" controls autoplay>exemplo de aúdio</audio>
+
+        </section>
+        <section id="css">
+            <h2>CSS</h2>
+            <p>Conteúdo:
+                CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a apresentação e o layout
+                de documentos HTML. Ele permite personalizar elementos como fontes, cores, espaçamento, bordas,
+                alinhamento, entre outros. Com CSS, é possível estilizar não apenas o conteúdo HTML, mas também
+                elementos como tabelas, listas, parágrafos e até mesmo linhas e bordas. Como exemplo ficam as
+                estilizações que realizamos nesta página web.
+
+                Para tanto precisamos criar um novo documento na pasta do nosso projeto, que deverá conter a extenção
+                .css. Como este é um arquivo diferente do html precisamos realizar a conexão entre eles assim na tag
+                head precisamos conectar por meio da tag link, como na figura abaixo, sendo o style.css o nome dado
+                seguido da extensão do arquivo.</p>
+            <img src="conexaocss.png" alt="imgcss">
+
+            <section id="javascript">
+                <h2>javascript</h2>
+                <p>JavaScript (JS) é uma linguagem de programação utilizada principalmente para adicionar interatividade
+                    e dinamismo a páginas web. Com o JS, é possível criar efeitos visuais, validar formulários,
+                    manipular elementos da página, criar animações e até mesmo realizar requisições assíncronas para
+                    atualizar conteúdo sem recarregar a página.
+
+                    Para tanto precisamos criar um novo documento na pasta do nosso projeto, que deverá conter a
+                    extenção .js. Como este é um arquivo diferente do html precisamos realizar a conexão entre eles
+                    assim na tag head precisamos conectar por meio da tag script, como na figura abaixo, sendo o main.js
+                    o nome dado seguido da extensão do arquivo.</p>
+                <img src="conexaojs.png" alt="imgjs">
+                <h1>exemplos de aplicaçoes do JS</h1>
+                <br>
+             
+            </section>
+
+
+
+
+
+            <nav>
+                <ul>
+                    <li><a href="#titulo">Voltar ao Início</a></li>
+                </ul>
+            </nav>
+
+
+
+
+
+
+
+            <section id="js">
+                <h1>JavaScript</h1>
+                <p>
+                    JavaScript (JS) é uma linguagem de programação utilizada principalmente para adicionar interatividade e dinamismo a páginas web. Com o JS, é possível criar efeitos visuais, validar formulários, manipular elementos da página, criar animações e até mesmo realizar requisições assíncronas para atualizar conteúdo sem recarregar a página.
+                    <br>
+                    <br>
+                    Para tanto precisamos criar um novo documento na pasta do nosso projeto, que deverá conter a extenção .js. Como este é um arquivo diferente do html precisamos realizar a conexão entre eles assim na tag head precisamos conectar por meio da tag script, como na figura abaixo, sendo o main.js o nome dado seguido da extensão do arquivo.
+                    <br>
+                    <br>
+                    <img src="conexaojs.png" alt="conexao html com js">
+                </p>
+                <h1>Exemplos de Aplicações do JS</h1>
+                <br>
+                <h3>Calculadora Simples</h3>
+                <p>Primeiro Número</p>
+                <input id="entrada1" type="number" placeholder="Digite um nº">
+                <p>Segundo Número</p>
+                <input id="entrada2" type="number" placeholder="Digite um nº">
+                <button onclick="somar()">Soma</button>
+                <button onclick="subtrair()">Subtração</button>
+                <button onclick="divisao()">Divisão</button>
+                <button onclick="multiplicacao()">Multiplicação</button>
+                <!-- <p>Resultado</p>  -->
+                 <br>
+                 <br>
+                <input id="resultadob" type="number">
+                <p id="resultado">Resultado</p>
+    
+                <br>
+                <h1>Calculadora de IMC</h1>
+                <br>
+                <p>Digite seu peso</p>
+                <input id="peso" type="number" placeholder="Peso">
+                <p>Digite sua altura</p>
+                <input id="altura" type="number" placeholder="Altura">
+                <button onclick="imc()">Calcular</button>
+                <p>IMC</p>
+                <input id="imcResultado" type="number">
+                <p>Considerações</p>
+                <p id="consideracoes"></p>
+    
+         
+
+            <center><img id="euuu" src="data:image/jpeg;base64,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" alt=""></center>
+            <p><p>um dois oi talvez sim quem sabe vitoria euz</p></p>
+
+    
+</body><!-- TAG de fechamento body -->
+
+</html><!-- TAG de fechamento html -->
+
+
+
+
+< tr><!--linha 1-->
+<td>vinagre branco</td>
+<td><menu><a href="https://produto.mercadolivre.com.br/MLB-3645096319-vinagre-de-vinho-branco-castelo-4-750ml-frasco-cozinha-_JM?matt_tool=78665334&matt_word=&matt_source=bing&matt_campaign=MLB_ML_BING_AO_CPG-ALL-ALL_X_PLA_ALLB_TXS_ALL&matt_campaign_id=382858296&matt_ad_group=CPG&matt_match_type=e&matt_network=o&matt_device=c&matt_keyword=default&msclkid=be7a5daa2cf01ab802713b4530d492a9&utm_source=bing&utm_medium=cpc&utm_campaign=MLB_ML_BING_AO_CPG-ALL-ALL_X_PLA_ALLB_TXS_ALL&utm_term=4581390093500051&utm_content=CPG">Mercado Livre</a></menu></td>
+<td>R$9,97</td>
+
+
+
+<tr><!--linha 1-->
+    <td>Uva Verde</td>
+    <td><menu><a href=""></a></menu></td>
+    <td></td>
+    </tr> <tr><!--linha 1-->
+        <td>Uva Verde</td>
+        <td><menu><a href=""></a></menu></td>
+        <td></td>
+        </tr> <tr><!--linha 1-->
+            <td>Uva Verde</td>
+            <td><menu><a href=""></a></menu></td>
+            <td></td>
+            </tr> 
+
+
+
+
+
+
+<tr><!--linha 1-->
+<td>vinagre branco</td>
+<td><menu><a href="https://produto.mercadolivre.com.br/MLB-3645096319-vinagre-de-vinho-branco-castelo-4-750ml-frasco-cozinha-_JM?matt_tool=78665334&matt_word=&matt_source=bing&matt_campaign=MLB_ML_BING_AO_CPG-ALL-ALL_X_PLA_ALLB_TXS_ALL&matt_campaign_id=382858296&matt_ad_group=CPG&matt_match_type=e&matt_network=o&matt_device=c&matt_keyword=default&msclkid=be7a5daa2cf01ab802713b4530d492a9&utm_source=bing&utm_medium=cpc&utm_campaign=MLB_ML_BING_AO_CPG-ALL-ALL_X_PLA_ALLB_TXS_ALL&utm_term=4581390093500051&utm_content=CPG">Mercado Livre</a></menu></td>
+<td>R$9,97</td>
+</tr> 
